@@ -1,155 +1,434 @@
 fileFormatVersion: 2
 guid: baa0e86298a1c7141aaf3ddea03cdf01
 ModelImporter:
-  serializedVersion: 21
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Dark Treant
-    100004: Leaf
-    100006: Leaf 1
-    100008: Plane001
-    100010: RigHeadGizmo
-    100012: RigLArm1Gizmo
-    100014: RigLArm2Gizmo
-    100016: RigMouthLowGizmo
-    100018: RigMouthUpGizmo
-    100020: RigPelvisGizmo
-    100022: RigRArm1Gizmo
-    100024: RigRArm2Gizmo
-    100026: w
-    100028: wHead
-    100030: wLArm1
-    100032: wLArm2
-    100034: wLLegBack1
-    100036: wLLegBack2
-    100038: wLLegBackAnkle
-    100040: wLLegBackPlatform
-    100042: wLLegFront1
-    100044: wLLegFront2
-    100046: wLLegFrontAnkle
-    100048: wLLegFrontPlatform
-    100050: wPelvis
-    100052: wRArm1
-    100054: wRArm2
-    100056: wRLegBack1
-    100058: wRLegBack2
-    100060: wRLegBackAnkle
-    100062: wRLegBackPlatform
-    100064: wRLegFront1
-    100066: wRLegFront2
-    100068: wRLegFrontAnkle
-    100070: wRLegFrontPlatform
-    100072: wSpine
-    100074: Rig
-    100076: RigHead
-    100078: RigLArm1
-    100080: RigLArm2
-    100082: RigLLegBack1
-    100084: RigLLegBack2
-    100086: RigLLegBackAnkle
-    100088: RigLLegBackPlatform
-    100090: RigLLegFront1
-    100092: RigLLegFront2
-    100094: RigLLegFrontAnkle
-    100096: RigLLegFrontPlatform
-    100098: RigPelvis
-    100100: RigRArm1
-    100102: RigRArm2
-    100104: RigRLegBack1
-    100106: RigRLegBack2
-    100108: RigRLegBackAnkle
-    100110: RigRLegBackPlatform
-    100112: RigRLegFront1
-    100114: RigRLegFront2
-    100116: RigRLegFrontAnkle
-    100118: RigRLegFrontPlatform
-    100120: RigSpine
-    400000: //RootNode
-    400002: Dark Treant
-    400004: Leaf
-    400006: Leaf 1
-    400008: Plane001
-    400010: RigHeadGizmo
-    400012: RigLArm1Gizmo
-    400014: RigLArm2Gizmo
-    400016: RigMouthLowGizmo
-    400018: RigMouthUpGizmo
-    400020: RigPelvisGizmo
-    400022: RigRArm1Gizmo
-    400024: RigRArm2Gizmo
-    400026: w
-    400028: wHead
-    400030: wLArm1
-    400032: wLArm2
-    400034: wLLegBack1
-    400036: wLLegBack2
-    400038: wLLegBackAnkle
-    400040: wLLegBackPlatform
-    400042: wLLegFront1
-    400044: wLLegFront2
-    400046: wLLegFrontAnkle
-    400048: wLLegFrontPlatform
-    400050: wPelvis
-    400052: wRArm1
-    400054: wRArm2
-    400056: wRLegBack1
-    400058: wRLegBack2
-    400060: wRLegBackAnkle
-    400062: wRLegBackPlatform
-    400064: wRLegFront1
-    400066: wRLegFront2
-    400068: wRLegFrontAnkle
-    400070: wRLegFrontPlatform
-    400072: wSpine
-    400074: Rig
-    400076: RigHead
-    400078: RigLArm1
-    400080: RigLArm2
-    400082: RigLLegBack1
-    400084: RigLLegBack2
-    400086: RigLLegBackAnkle
-    400088: RigLLegBackPlatform
-    400090: RigLLegFront1
-    400092: RigLLegFront2
-    400094: RigLLegFrontAnkle
-    400096: RigLLegFrontPlatform
-    400098: RigPelvis
-    400100: RigRArm1
-    400102: RigRArm2
-    400104: RigRLegBack1
-    400106: RigRLegBack2
-    400108: RigRLegBackAnkle
-    400110: RigRLegBackPlatform
-    400112: RigRLegFront1
-    400114: RigRLegFront2
-    400116: RigRLegFrontAnkle
-    400118: RigRLegFrontPlatform
-    400120: RigSpine
-    2300000: Dark Treant
-    2300002: Leaf
-    2300004: Leaf 1
-    2300006: Plane001
-    2300008: //RootNode
-    3300000: Dark Treant
-    3300002: Leaf
-    3300004: Leaf 1
-    3300006: Plane001
-    3300008: //RootNode
-    4300000: Plane001
-    4300002: Dark Treant
-    4300004: Leaf
-    4300006: Leaf
-    9500000: //RootNode
-    13700000: Dark Treant
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Dark Treant
+  - first:
+      1: 100004
+    second: Leaf
+  - first:
+      1: 100006
+    second: Leaf 1
+  - first:
+      1: 100008
+    second: Plane001
+  - first:
+      1: 100010
+    second: RigHeadGizmo
+  - first:
+      1: 100012
+    second: RigLArm1Gizmo
+  - first:
+      1: 100014
+    second: RigLArm2Gizmo
+  - first:
+      1: 100016
+    second: RigMouthLowGizmo
+  - first:
+      1: 100018
+    second: RigMouthUpGizmo
+  - first:
+      1: 100020
+    second: RigPelvisGizmo
+  - first:
+      1: 100022
+    second: RigRArm1Gizmo
+  - first:
+      1: 100024
+    second: RigRArm2Gizmo
+  - first:
+      1: 100026
+    second: w
+  - first:
+      1: 100028
+    second: wHead
+  - first:
+      1: 100030
+    second: wLArm1
+  - first:
+      1: 100032
+    second: wLArm2
+  - first:
+      1: 100034
+    second: wLLegBack1
+  - first:
+      1: 100036
+    second: wLLegBack2
+  - first:
+      1: 100038
+    second: wLLegBackAnkle
+  - first:
+      1: 100040
+    second: wLLegBackPlatform
+  - first:
+      1: 100042
+    second: wLLegFront1
+  - first:
+      1: 100044
+    second: wLLegFront2
+  - first:
+      1: 100046
+    second: wLLegFrontAnkle
+  - first:
+      1: 100048
+    second: wLLegFrontPlatform
+  - first:
+      1: 100050
+    second: wPelvis
+  - first:
+      1: 100052
+    second: wRArm1
+  - first:
+      1: 100054
+    second: wRArm2
+  - first:
+      1: 100056
+    second: wRLegBack1
+  - first:
+      1: 100058
+    second: wRLegBack2
+  - first:
+      1: 100060
+    second: wRLegBackAnkle
+  - first:
+      1: 100062
+    second: wRLegBackPlatform
+  - first:
+      1: 100064
+    second: wRLegFront1
+  - first:
+      1: 100066
+    second: wRLegFront2
+  - first:
+      1: 100068
+    second: wRLegFrontAnkle
+  - first:
+      1: 100070
+    second: wRLegFrontPlatform
+  - first:
+      1: 100072
+    second: wSpine
+  - first:
+      1: 100074
+    second: Rig
+  - first:
+      1: 100076
+    second: RigHead
+  - first:
+      1: 100078
+    second: RigLArm1
+  - first:
+      1: 100080
+    second: RigLArm2
+  - first:
+      1: 100082
+    second: RigLLegBack1
+  - first:
+      1: 100084
+    second: RigLLegBack2
+  - first:
+      1: 100086
+    second: RigLLegBackAnkle
+  - first:
+      1: 100088
+    second: RigLLegBackPlatform
+  - first:
+      1: 100090
+    second: RigLLegFront1
+  - first:
+      1: 100092
+    second: RigLLegFront2
+  - first:
+      1: 100094
+    second: RigLLegFrontAnkle
+  - first:
+      1: 100096
+    second: RigLLegFrontPlatform
+  - first:
+      1: 100098
+    second: RigPelvis
+  - first:
+      1: 100100
+    second: RigRArm1
+  - first:
+      1: 100102
+    second: RigRArm2
+  - first:
+      1: 100104
+    second: RigRLegBack1
+  - first:
+      1: 100106
+    second: RigRLegBack2
+  - first:
+      1: 100108
+    second: RigRLegBackAnkle
+  - first:
+      1: 100110
+    second: RigRLegBackPlatform
+  - first:
+      1: 100112
+    second: RigRLegFront1
+  - first:
+      1: 100114
+    second: RigRLegFront2
+  - first:
+      1: 100116
+    second: RigRLegFrontAnkle
+  - first:
+      1: 100118
+    second: RigRLegFrontPlatform
+  - first:
+      1: 100120
+    second: RigSpine
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Dark Treant
+  - first:
+      4: 400004
+    second: Leaf
+  - first:
+      4: 400006
+    second: Leaf 1
+  - first:
+      4: 400008
+    second: Plane001
+  - first:
+      4: 400010
+    second: RigHeadGizmo
+  - first:
+      4: 400012
+    second: RigLArm1Gizmo
+  - first:
+      4: 400014
+    second: RigLArm2Gizmo
+  - first:
+      4: 400016
+    second: RigMouthLowGizmo
+  - first:
+      4: 400018
+    second: RigMouthUpGizmo
+  - first:
+      4: 400020
+    second: RigPelvisGizmo
+  - first:
+      4: 400022
+    second: RigRArm1Gizmo
+  - first:
+      4: 400024
+    second: RigRArm2Gizmo
+  - first:
+      4: 400026
+    second: w
+  - first:
+      4: 400028
+    second: wHead
+  - first:
+      4: 400030
+    second: wLArm1
+  - first:
+      4: 400032
+    second: wLArm2
+  - first:
+      4: 400034
+    second: wLLegBack1
+  - first:
+      4: 400036
+    second: wLLegBack2
+  - first:
+      4: 400038
+    second: wLLegBackAnkle
+  - first:
+      4: 400040
+    second: wLLegBackPlatform
+  - first:
+      4: 400042
+    second: wLLegFront1
+  - first:
+      4: 400044
+    second: wLLegFront2
+  - first:
+      4: 400046
+    second: wLLegFrontAnkle
+  - first:
+      4: 400048
+    second: wLLegFrontPlatform
+  - first:
+      4: 400050
+    second: wPelvis
+  - first:
+      4: 400052
+    second: wRArm1
+  - first:
+      4: 400054
+    second: wRArm2
+  - first:
+      4: 400056
+    second: wRLegBack1
+  - first:
+      4: 400058
+    second: wRLegBack2
+  - first:
+      4: 400060
+    second: wRLegBackAnkle
+  - first:
+      4: 400062
+    second: wRLegBackPlatform
+  - first:
+      4: 400064
+    second: wRLegFront1
+  - first:
+      4: 400066
+    second: wRLegFront2
+  - first:
+      4: 400068
+    second: wRLegFrontAnkle
+  - first:
+      4: 400070
+    second: wRLegFrontPlatform
+  - first:
+      4: 400072
+    second: wSpine
+  - first:
+      4: 400074
+    second: Rig
+  - first:
+      4: 400076
+    second: RigHead
+  - first:
+      4: 400078
+    second: RigLArm1
+  - first:
+      4: 400080
+    second: RigLArm2
+  - first:
+      4: 400082
+    second: RigLLegBack1
+  - first:
+      4: 400084
+    second: RigLLegBack2
+  - first:
+      4: 400086
+    second: RigLLegBackAnkle
+  - first:
+      4: 400088
+    second: RigLLegBackPlatform
+  - first:
+      4: 400090
+    second: RigLLegFront1
+  - first:
+      4: 400092
+    second: RigLLegFront2
+  - first:
+      4: 400094
+    second: RigLLegFrontAnkle
+  - first:
+      4: 400096
+    second: RigLLegFrontPlatform
+  - first:
+      4: 400098
+    second: RigPelvis
+  - first:
+      4: 400100
+    second: RigRArm1
+  - first:
+      4: 400102
+    second: RigRArm2
+  - first:
+      4: 400104
+    second: RigRLegBack1
+  - first:
+      4: 400106
+    second: RigRLegBack2
+  - first:
+      4: 400108
+    second: RigRLegBackAnkle
+  - first:
+      4: 400110
+    second: RigRLegBackPlatform
+  - first:
+      4: 400112
+    second: RigRLegFront1
+  - first:
+      4: 400114
+    second: RigRLegFront2
+  - first:
+      4: 400116
+    second: RigRLegFrontAnkle
+  - first:
+      4: 400118
+    second: RigRLegFrontPlatform
+  - first:
+      4: 400120
+    second: RigSpine
+  - first:
+      23: 2300000
+    second: Dark Treant
+  - first:
+      23: 2300002
+    second: Leaf
+  - first:
+      23: 2300004
+    second: Leaf 1
+  - first:
+      23: 2300006
+    second: Plane001
+  - first:
+      23: 2300008
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: Dark Treant
+  - first:
+      33: 3300002
+    second: Leaf
+  - first:
+      33: 3300004
+    second: Leaf 1
+  - first:
+      33: 3300006
+    second: Plane001
+  - first:
+      33: 3300008
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Plane001
+  - first:
+      43: 4300002
+    second: Dark Treant
+  - first:
+      43: 4300004
+    second: Leaf
+  - first:
+      43: 4300006
+    second: Leaf
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Dark Treant
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -157,6 +436,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -171,19 +452,33 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
@@ -191,10 +486,28 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - c46873a6f73c78848b439ade03ad8737
+  - 4b5958f3716c2b04383d3c8bcf1e7c18
+  - d70053b28a3ba1f46a02c555e921f435
+  - 8a9d3d7301840a84a835c588ab4ee30c
+  - 4df8de026a170294797eeaded0d8b554
+  - fa4b161749e359f4aa71d0537cae7ab6
+  - 4574947ea72a30343ab8686a6f6e8d8f
+  - a2b7fdbd3afff704f885d3493c32f4fa
+  - cab2da8a85b99214f9d240b55062ac7c
+  - 3010ea3e11d074c4c8f595323f1bbf89
+  - fb8650d3477db7c4184ee62c17ca0186
+  - 351d90bf271b8614489c8460a8009ad0
+  - 192e7d07103e5ca4691be5ed72c29453
+  - ac0ba24b46ebba245a39b5266fc899c8
+  - 7b50c5319dccbfb4dbd516e6e6c62a4a
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -204,14 +517,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 1
   userData: 
   assetBundleName: 
