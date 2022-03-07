@@ -270,7 +270,6 @@ MonoBehaviour:
     cooldown: 2
     inCombat: 0
     combatMode: 0
-    target: {fileID: 0}
     combatCoroutine: 0
     dead: 0
   regenHPEnabled: 1
@@ -319,10 +318,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb6a37b6334bb8419ddf1edf6d987f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerModel: {fileID: 0}
+  playerModel: {fileID: 1684249320}
+  animator: {fileID: 5730183444680877744}
+  weaponRange: 1.5
+  enemiesList: []
 --- !u!4 &1830044398293548234 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4fabec0cd1b58c74c9e9da9e8d28cd15, type: 3}
+  m_PrefabInstance: {fileID: 2229043025395817249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5730183444680877744 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 4fabec0cd1b58c74c9e9da9e8d28cd15, type: 3}
   m_PrefabInstance: {fileID: 2229043025395817249}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6062969178775223810 stripped
