@@ -51,7 +51,6 @@ public class Entity {
     public float cooldown = 2;
     public bool inCombat = false;
     public bool combatMode;
-    public GameObject target;
     public bool combatCoroutine = false; //saber se a rotina de ataque esta funcionando
     public bool dead = false;
 }

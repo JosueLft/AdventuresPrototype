@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
     public float smoothRotTime;
     public float gravity = 10;
     public float colliderRadius;
-    public float damage = 20;
+    public int damage = 20;
     public List<Transform> enemyList = new List<Transform>();
     private float turnSmoothVelocity;
     private CharacterController controller;

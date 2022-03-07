@@ -272,7 +272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5726367821440451468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.186714, y: 33.612473, z: -99.16159}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2460,7 +2460,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8349172040530066259}
-  m_LocalRotation: {x: -0, y: -0.8732893, z: -0, w: 0.4872021}
+  m_LocalRotation: {x: 0, y: -0.8732879, z: 0, w: 0.48720452}
   m_LocalPosition: {x: -4.600754, y: -3.49, z: 5.938553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d3658523b59f341b16f962c88372f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 4422074119942014289}
+  monsterName: {fileID: 4422074119942014289}
   canvas: {fileID: 7455517512157733823}
 --- !u!114 &2720492805196600033
 MonoBehaviour:
@@ -2645,9 +2645,12 @@ MonoBehaviour:
     attackTimer: 1
     cooldown: 2
     inCombat: 0
+    combatMode: 0
     target: {fileID: 0}
     combatCoroutine: 0
     dead: 0
+  baseHealth: 20
+  baseMana: 40
   regenHPEnabled: 1
   regenHPTime: 5
   regenHPValue: 5

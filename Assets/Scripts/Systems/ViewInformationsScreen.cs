@@ -5,19 +5,24 @@ using UnityEngine.UI;
 using TMPro;
 
 public class ViewInformationsScreen : MonoBehaviour {
-    public TextMeshProUGUI name;
+    public TextMeshProUGUI monsterName;
     public Canvas canvas;
-    public static string entityName;
+    string nameMonster;
 
-    void Start() {
+    public static ViewInformationsScreen inst;
+
+    void Awake() {
+        if(inst = null) {
+            inst = this;
+        }
     }
 
     void Update() {
         canvas.gameObject.transform.LookAt(Camera.main.transform);
-        name.text = entityName;
+        monsterName.text = nameMonster;
     }
 
-    public static void SetName(string n) {
-        entityName = n;
+    public void SetName(string n) {
+        nameMonster = n;
     }
 }

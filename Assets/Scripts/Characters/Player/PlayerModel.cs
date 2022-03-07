@@ -75,6 +75,9 @@ public class PlayerModel : MonoBehaviour {
         level.text = "lvl. " + entity.level;
         EXPSlider.value = entity.exp;
         levelPercentage.text = entity.exp + "%";
+
+        entity.physicsDamage = manager.CalculateDamage(entity, 3);
+        entity.defense = manager.CalculateDefense(entity, 2);
     }
 
     void InitStatus() {
@@ -97,6 +100,9 @@ public class PlayerModel : MonoBehaviour {
         EXPSlider.value = entity.exp;
         levelPercentage.text = entity.exp + "%";
         level.text = "lvl. " + entity.level;
+
+        entity.physicsDamage = manager.CalculateDamage(entity, 3);
+        entity.defense = manager.CalculateDefense(entity, 2);
     }
 
     IEnumerator RegenHealth() {
@@ -131,10 +137,10 @@ public class PlayerModel : MonoBehaviour {
         }
     }
 
-    void Die() {
+    public void Die() {
         entity.currentHealth = 0;
         entity.dead = true;
-        entity.target = null;
+        UpdateCurrentStatus();
         StopAllCoroutines();
     }
 }

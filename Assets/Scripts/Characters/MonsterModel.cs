@@ -7,6 +7,8 @@ using TMPro;
 public class MonsterModel : MonoBehaviour {
     [Header("Entity")]
     public Entity entity;
+    public int baseHealth;
+    public int baseMana;
 
     [Header("Monster Regen System")]
     public bool regenHPEnabled = true;
@@ -22,17 +24,29 @@ public class MonsterModel : MonoBehaviour {
     [Header("Monster UI")]
     public Slider HPSlider;
 
+    public ViewInformationsScreen informations;
+
     void Start() {
         if(manager == null) {
             Debug.LogFormat("Você precisa anexar o game manager aqui no monstro");
             return;
         }
+        InitStatus();
+        //Iniciar o regenHealth
+        StartCoroutine(RegenHealth());
+        StartCoroutine(RegenMana());
+    }
 
+    void Update() {
+        HPSlider.value = entity.currentHealth;
+    }
+
+    void InitStatus() {
         GenerateAttributes();
-        ViewInformationsScreen.SetName(entity.name);
+        informations.SetName(entity.name);
 
-        entity.maxHealth = manager.CalculateHealth(entity);
-        entity.maxMana = manager.CalculateMana(entity);
+        entity.maxHealth = baseHealth + manager.CalculateHealth(entity);
+        entity.maxMana = baseMana + manager.CalculateMana(entity);
         entity.maxStamina = manager.CalculateStamina(entity);
 
         entity.currentHealth = entity.maxHealth;
@@ -42,13 +56,8 @@ public class MonsterModel : MonoBehaviour {
         HPSlider.maxValue = entity.maxHealth;
         HPSlider.value = HPSlider.maxValue;
 
-        //Iniciar o regenHealth
-        StartCoroutine(RegenHealth());
-        StartCoroutine(RegenMana());
-    }
-
-    void Update() {
-        HPSlider.value = entity.currentHealth;
+        entity.physicsDamage = manager.CalculateDamage(entity, 3);
+        entity.defense = manager.CalculateDefense(entity, 2);
     }
 
     IEnumerator RegenHealth() {
@@ -81,10 +90,9 @@ public class MonsterModel : MonoBehaviour {
         }
     }
 
-    void Die() {
+    public void Die() {
         entity.currentHealth = 0;
         entity.dead = true;
-        entity.target = null;
         StopAllCoroutines();
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+[RequireComponent(typeof(PlayerModel))]
 public class PlayerMovements : MonoBehaviour {
 
     public float smoothRotTime;
@@ -38,10 +39,12 @@ public class PlayerMovements : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if(!playerModel.entity.inCombat && !playerModel.entity.combatMode) {
-            Move();
-        } else {
-            CombatMoviment();
+        if(!playerModel.entity.dead) {
+            if(!playerModel.entity.inCombat && !playerModel.entity.combatMode) {
+                Move();
+            } else {
+                CombatMoviment();
+            }
         }
     }
 
@@ -99,7 +102,11 @@ public class PlayerMovements : MonoBehaviour {
     void SetWalk(bool walk) {
         isWalking = walk;
         animator.SetBool("isWalking", isWalking);
-        animator.SetBool("isSlowRun", isSlowRun);
+        if(walk) {
+            animator.SetBool("isSlowRun", isSlowRun);
+        } else {
+            animator.SetBool("isSlowRun", false);
+        }
     }
 
     void ChangeSpeed(){

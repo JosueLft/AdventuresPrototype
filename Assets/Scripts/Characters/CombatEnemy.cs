@@ -5,9 +5,7 @@ using UnityEngine.AI;
 
 public class CombatEnemy : MonoBehaviour {
     [Header("Atributtes")]
-    public float totalHealth = 100;
-    public float attackDamage;
-    public float movementSpeed;
+    public MonsterModel monsterModel;
     public float lookRadius;
     public float colliderRadius = 2;
     public float rotationSpeed;
@@ -19,11 +17,11 @@ public class CombatEnemy : MonoBehaviour {
     private NavMeshAgent agent;
 
     [Header("Others")]
-    private Transform player;
-    private bool walking;
-    private bool attacking;
-    private bool waitFor;
-    private bool hiting;
+    public Transform player;
+    public bool walking;
+    public bool attacking;
+    public bool waitFor;
+    public bool hiting;
     public bool playerIsDead;
 
     [Header("Waypoints")]
@@ -43,10 +41,14 @@ public class CombatEnemy : MonoBehaviour {
     }
 
     void Update() {
-        if(totalHealth > 0) {
-            float distance = Vector3.Distance(player.position, transform.position);
+        FollowPlayer();
+    }
 
-            if(distance <= lookRadius) { //Raio de ação, detecção do player, perseguição
+    void FollowPlayer() {
+        float distance = Vector3.Distance(player.position, transform.position);
+
+        if(distance <= lookRadius && !playerIsDead) { //Raio de ação, detecção do player, perseguição
+            if(!playerIsDead) {
                 agent.isStopped = false;
                 if(!attacking) {
                     agent.SetDestination(player.position);
@@ -66,6 +68,12 @@ public class CombatEnemy : MonoBehaviour {
                 attacking = false;
                 MoveToWaypoint();
             }
+        } else {
+            anim.SetBool("Walk Forward", false);
+            walking = false;
+            attacking = false;
+            agent.isStopped = false;
+            MoveToWaypoint();
         }
     }
 
@@ -74,8 +82,8 @@ public class CombatEnemy : MonoBehaviour {
             waitFor = true;
             attacking = true;
             walking = false;
-            anim.SetBool("Bite Attack", true);
-            anim.SetBool("Walk Forward", false);
+            anim.SetBool("Bite Attack", attacking);
+            anim.SetBool("Walk Forward", walking);
             yield return new WaitForSeconds(0.8f);
             GetPlayer();
             yield return new WaitForSeconds(1f);
@@ -87,28 +95,30 @@ public class CombatEnemy : MonoBehaviour {
             anim.SetBool("Walk Forward", false);
             walking = false;
             attacking = false;
-            agent.isStopped = true;
+            //agent.isStopped = true;
         }
     }
 
     void GetPlayer() {
         foreach(Collider c in Physics.OverlapSphere((transform.position + transform.forward * colliderRadius), colliderRadius)) {
             if(c.gameObject.CompareTag("Player")) {
-                c.gameObject.GetComponent<Player>().GetHit(attackDamage);
-                playerIsDead = c.gameObject.GetComponent<Player>().isDead;
+                c.gameObject.GetComponent<CombatMode>().GetHit(monsterModel.entity.physicsDamage);
+                playerIsDead = c.gameObject.GetComponent<PlayerModel>().entity.dead;
             }
         }
     }
 
-    public void GetHit(float damage) {
-        totalHealth -= damage;
-        if(totalHealth > 0) {
+    public void GetHit(int damage) {
+        int damageReceived = (monsterModel.entity.defense - damage) > 0 ? monsterModel.entity.defense - damage : 0;
+        monsterModel.entity.currentHealth -= damageReceived;
+        if(monsterModel.entity.currentHealth > 0) {
             StopCoroutine("Attack");
             anim.SetTrigger("Take Damage");
             hiting = true;
             StartCoroutine("RecoveryFromHit");
         } else {
             anim.SetTrigger("Die");
+            monsterModel.Die();
         }
     }
 
@@ -148,6 +158,8 @@ public class CombatEnemy : MonoBehaviour {
             yield return new WaitForSeconds((float) waitTimePatrol);
             currentPathIndex = Random.Range(0, waypoints.Count);
             isStop = true;
+            yield return new WaitForSeconds(3f);
+            playerIsDead = false;
         }
     }
 
