@@ -91,6 +91,9 @@ namespace StarterAssets
 
 		private bool _hasAnimator;
 
+		// My Changes
+		private bool rotateOnMove = true;
+
 		private void Awake()
 		{
 			// get a reference to our main camera
@@ -209,8 +212,10 @@ namespace StarterAssets
 				_targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
 				float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity, RotationSmoothTime);
 
-				// rotate to face input direction relative to camera position
-				transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+				if(rotateOnMove) {
+					// rotate to face input direction relative to camera position
+					transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+				}
 			}
 
 
@@ -225,6 +230,11 @@ namespace StarterAssets
 				_animator.SetFloat(_animIDSpeed, _animationBlend);
 				_animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
 			}
+		}
+
+		// My Changes
+		public void SetRotateOnMove(bool newValue) {
+			rotateOnMove = newValue;
 		}
 
 		private void JumpAndGravity()

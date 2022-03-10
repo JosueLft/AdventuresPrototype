@@ -13,6 +13,10 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
 
+		// My Changes
+		public bool HotKey_1;
+		public bool aim;
+
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
@@ -45,6 +49,15 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		// My Changes
+		public void OnHotKey_1(InputValue value) {
+			HotKey1Input(value.isPressed);
+		}
+
+		public void OnAim(InputValue value) {
+			AimInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -68,6 +81,15 @@ namespace StarterAssets
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
+		}
+
+		// My Changes
+		public void HotKey1Input(bool newHK1) {
+			HotKey_1 = newHK1;
+		}
+
+		public void AimInput(bool newAim) {
+			aim = newAim;
 		}
 
 #if !UNITY_IOS || !UNITY_ANDROID

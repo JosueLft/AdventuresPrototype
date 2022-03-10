@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Block
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Fighter_arm_00
+    m_Weight: 1
+  - m_Path: Fighter_head_00
+    m_Weight: 1
+  - m_Path: Fighter_leg_00
+    m_Weight: 1
+  - m_Path: Fighter_lower_00
+    m_Weight: 1
+  - m_Path: Fighter_shoulder_00
+    m_Weight: 1
+  - m_Path: Fighter_upper_00
+    m_Weight: 1
+  - m_Path: movement
+    m_Weight: 1
+  - m_Path: movement/Bip001
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Footsteps
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01/Back_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01/Back_Skirt_02/Back_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01/Back_Skirt_02/Back_Skirt_03/Back_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01/Back_Skirt_02/Back_Skirt_03/Back_Skirt_04/Back_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Back_Skirt_Root/Back_Skirt_01/Back_Skirt_02/Back_Skirt_03/Back_Skirt_04/Back_Skirt_05/Back_Skirt_06
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root/BackLeft_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root/BackLeft_Skirt_01/BackLeft_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root/BackLeft_Skirt_01/BackLeft_Skirt_02/BackLeft_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root/BackLeft_Skirt_01/BackLeft_Skirt_02/BackLeft_Skirt_03/BackLeft_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackLeft_Skirt_Root/BackLeft_Skirt_01/BackLeft_Skirt_02/BackLeft_Skirt_03/BackLeft_Skirt_04/BackLeft_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root/BackRight_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root/BackRight_Skirt_01/BackRight_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root/BackRight_Skirt_01/BackRight_Skirt_02/BackRight_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root/BackRight_Skirt_01/BackRight_Skirt_02/BackRight_Skirt_03/BackRight_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/BackRight_Skirt_Root/BackRight_Skirt_01/BackRight_Skirt_02/BackRight_Skirt_03/BackRight_Skirt_04/BackRight_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 L Thigh
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+      L Toe0
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+      L Toe0/Bip001 L Toe0Nub
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 R Thigh
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+      R Toe0
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+      R Toe0/Bip001 R Toe0Nub
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Bip001 L Forearm
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Bip001 L Forearm/Bip001 L Hand
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0/Bip001 L Finger0Nub
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Bip001 L Forearm/Bip001 L Hand/weapon_l
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/Left_Shoulder
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001
+      L UpperArm/leftshoulder
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/Bip001 HeadNub
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04/UP_Hair_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04/UP_Hair_05/UP_Hair_06
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04/UP_Hair_05/UP_Hair_06/UP_Hair_07
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04/UP_Hair_05/UP_Hair_06/UP_Hair_07/UP_Hair_08
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+      Head/UP_Hair_Root/UP_Hair_01/UP_Hair_02/UP_Hair_03/UP_Hair_04/UP_Hair_05/UP_Hair_06/UP_Hair_07/UP_Hair_08/UP_Hair_09
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Bip001 R Forearm
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Bip001 R Forearm/Bip001 R Hand
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0/Bip001 R Finger0Nub
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon_r
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/Right_Shoulder
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001
+      R UpperArm/rightshoulder
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03/Cape_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03/Cape_04/Cape_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03/Cape_04/Cape_05/Cape_06
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03/Cape_04/Cape_05/Cape_06/Cape_07
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Cape_Root/Cape_01/Cape_02/Cape_03/Cape_04/Cape_05/Cape_06/Cape_07/Cape_08
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/fx_center
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01/Front_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01/Front_Skirt_02/Front_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01/Front_Skirt_02/Front_Skirt_03/Front_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01/Front_Skirt_02/Front_Skirt_03/Front_Skirt_04/Front_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/Front_Skirt_Root/Front_Skirt_01/Front_Skirt_02/Front_Skirt_03/Front_Skirt_04/Front_Skirt_05/Front_Skirt_06
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root/FrontLeft_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root/FrontLeft_Skirt_01/FrontLeft_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root/FrontLeft_Skirt_01/FrontLeft_Skirt_02/FrontLeft_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root/FrontLeft_Skirt_01/FrontLeft_Skirt_02/FrontLeft_Skirt_03/FrontLeft_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontLeft_Skirt_Root/FrontLeft_Skirt_01/FrontLeft_Skirt_02/FrontLeft_Skirt_03/FrontLeft_Skirt_04/FrontLeft_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root/FrontRight_Skirt_01
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root/FrontRight_Skirt_01/FrontRight_Skirt_02
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root/FrontRight_Skirt_01/FrontRight_Skirt_02/FrontRight_Skirt_03
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root/FrontRight_Skirt_01/FrontRight_Skirt_02/FrontRight_Skirt_03/FrontRight_Skirt_04
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Pelvis/FrontRight_Skirt_Root/FrontRight_Skirt_01/FrontRight_Skirt_02/FrontRight_Skirt_03/FrontRight_Skirt_04/FrontRight_Skirt_05
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop1
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop1/fx_weapon_l
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop1/righthandweapon
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop2
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop2/fx_weapon_r
+    m_Weight: 1
+  - m_Path: movement/Bip001/Bip001 Prop2/lefthandweapon
+    m_Weight: 1
+  - m_Path: movement/fx_bottom
+    m_Weight: 1
+  - m_Path: movement/fx_top
+    m_Weight: 1
