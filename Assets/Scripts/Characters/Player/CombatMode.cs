@@ -1,28 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
+using System;
 
 [RequireComponent(typeof(PlayerModel))]
 public class CombatMode : MonoBehaviour {
 
+    public float weaponRange;
     public PlayerModel playerModel;
     public Animator animator;
-    public float weaponRange;
     public List<Transform> enemiesList = new List<Transform>();
     private bool isWalking;
     private bool waitFor;
     private bool isHitting;
+    StarterAssetsInputs input;
+    ThirdPersonController tpc;
 
     void Start() {
-        
+        InitComponents();
     }
 
     void Update() {
         BasicAttack();
     }
 
+    void InitComponents() {
+        input = GetComponent<StarterAssetsInputs>();
+        animator = GetComponent<Animator>();
+        tpc = GetComponent<ThirdPersonController>();
+    }
+
     void BasicAttack() {
-        if(Input.GetKeyDown(KeyCode.Alpha1)) {
+        if(input.HotKey_1) {
             StartCoroutine("SwordAttack");
         }
     }
@@ -31,6 +41,7 @@ public class CombatMode : MonoBehaviour {
         if(!waitFor && !isHitting) {
             waitFor = true;
             animator.SetInteger("SwordSkill", 1);
+            animator.SetLayerWeight(3, 1);
             yield return new WaitForSeconds(0.4f);
 
             GetEnemiesList();
@@ -43,6 +54,7 @@ public class CombatMode : MonoBehaviour {
             }
             yield return new WaitForSeconds(1f);
             animator.SetInteger("SwordSkill", 0);
+            animator.SetLayerWeight(3, 0);
             waitFor = false;
         }
     }

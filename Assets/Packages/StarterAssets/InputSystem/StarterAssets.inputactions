@@ -43,9 +43,9 @@
                 },
                 {
                     "name": "HotKey_1",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "a0d30463-ac90-4de7-bd92-3f93015a43a4",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

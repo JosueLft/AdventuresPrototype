@@ -9,37 +9,37 @@ public class ShooterSystem : MonoBehaviour {
     public float aimMaxDistance = 100;
     public GameObject aimCamera;
     public GameObject ammunitionPrefab;
-    public Transform debugTransform;
     public Transform ammunitionSpawn;
     StarterAssetsInputs input;
     ThirdPersonController tpc;
     Animator animator;
     Camera mainCam;
+    Vector3 aimPosition = Vector3.zero;
 
     void Start() {
+        InitComponents();
+    }
+
+    void Update() {
+        Aim();
+        Shot();
+    }
+
+    void InitComponents() {
         input = GetComponent<StarterAssetsInputs>();
         tpc = GetComponent<ThirdPersonController>();
         animator = GetComponent<Animator>();
         mainCam = Camera.main;
     }
 
-    void Update() {
-        Vector3 aimPosition = Vector3.zero;
+    void Aim() {
         Vector2 screenCenterPos = new Vector2(Screen.width / 2f, Screen.height / 2f);
         Ray ray = mainCam.ScreenPointToRay(screenCenterPos);
         if(Physics.Raycast(ray, out RaycastHit hit, aimMaxDistance)) {
-            debugTransform.position = hit.point;
             aimPosition = hit.point;
         } else {
-            debugTransform.position = ray.origin + ray.direction * aimMaxDistance;
             aimPosition = ray.origin + ray.direction * aimMaxDistance;
         }
-        
-
-        
-    }
-
-    void Aim() {
         if(input.aim) {
             animator.SetLayerWeight(2, 1);
             tpc.SetRotateOnMove(false);
